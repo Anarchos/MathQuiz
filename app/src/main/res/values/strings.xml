@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MathQuiz</string>
+    <string name="score">Your score is :  </string>
+    <string name="round">Round :  </string>
+    <string name="lives">Lives :  </string>
+    <string name="retry">Retry </string>
+    <string name="red">RED </string>
+    <string name="blue">BLUE </string>
+    <string name="pink">PINK </string>
+    <string name="green">GREEN </string>
+    <string name="yellow">YELLOW </string>
+    <string name="purple">PURPLE </string>
+    <string name="submit">SUBMIT </string>
+    <string name="highScore">High Score : </string>
+    <string name="choose"> Choose a difficulty </string>
+</resources>

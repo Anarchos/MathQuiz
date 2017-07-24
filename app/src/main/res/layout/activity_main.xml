@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.matt.mathquiz.MainActivity">
+
+    <Button
+        android:text="@string/blue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/btnBlue"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignBaseline="@+id/btnRed"
+        android:layout_alignBottom="@+id/btnRed"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/green"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGreen"
+        android:layout_alignBaseline="@+id/btnPink"
+        android:layout_alignBottom="@+id/btnPink"
+        android:layout_alignLeft="@+id/btnBlue"
+        android:layout_alignStart="@+id/btnBlue"
+        android:background="@android:color/holo_green_dark" />
+
+    <Button
+        android:text="@string/pink"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/btnPink"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/btnRed"
+        android:layout_alignLeft="@+id/btnRed"
+        android:layout_alignStart="@+id/btnRed" />
+
+    <Button
+        android:text="@string/yellow"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnYellow"
+        android:layout_below="@+id/btnPink"
+        android:layout_alignLeft="@+id/btnPink"
+        android:layout_alignStart="@+id/btnPink"
+        android:background="@android:color/holo_orange_light" />
+
+    <Button
+        android:text="@string/purple"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPurple"
+        android:background="@android:color/holo_purple"
+        android:layout_alignBaseline="@+id/btnYellow"
+        android:layout_alignBottom="@+id/btnYellow"
+        android:layout_alignLeft="@+id/btnGreen"
+        android:layout_alignStart="@+id/btnGreen" />
+
+    <Button
+        android:text="@string/red"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:id="@+id/btnRed"
+        android:background="@android:color/holo_red_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textScore"
+        android:layout_alignStart="@+id/textScore" />
+
+    <TextView
+        android:text="@string/round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:id="@+id/textRound"
+        android:layout_alignBaseline="@+id/textScore"
+        android:layout_alignBottom="@+id/textScore"
+        android:layout_alignRight="@+id/btnPurple"
+        android:layout_alignEnd="@+id/btnPurple" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnYellow"
+        android:layout_alignRight="@+id/btnYellow"
+        android:layout_alignEnd="@+id/btnYellow"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textValue1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textValue1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textOperator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textOperator"
+        android:layout_alignLeft="@+id/btnPurple"
+        android:layout_alignStart="@+id/btnPurple"
+        android:id="@+id/textValue2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editAnswer"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/textValue1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAnswer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/btnAnswer" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/editAnswer"
+        android:id="@+id/textCurrentScore"
+        android:layout_below="@+id/textScore"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textRound"
+        android:layout_alignLeft="@+id/textRound"
+        android:layout_alignStart="@+id/textRound"
+        android:id="@+id/textCurrentRound" />
+
+    <TextView
+        android:text="@string/lives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textRound"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textLives" />
+
+    <TextView
+        android:text="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLives"
+        android:id="@+id/textCurrentLives"
+        android:layout_alignLeft="@+id/textLives"
+        android:layout_alignStart="@+id/textLives" />
+
+    <TextView
+        android:text="@string/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textScore"
+        android:layout_below="@+id/btnAnswer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="@string/highScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnAnswer"
+        android:layout_toStartOf="@+id/btnAnswer"
+        android:id="@+id/textHighScore" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCurrentHighScore"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textCurrentLives"
+        android:layout_toStartOf="@+id/textCurrentLives" />
+</RelativeLayout>
